@@ -21,7 +21,7 @@ function App() {
       return;
     }
     try {
-      const response = await fetch('https://coin-calculate-backend.onrender.com', {
+      const response = await fetch('https://coin-calculate-backend.onrender.com/api/coin-change', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ amount: parseFloat(amount), coins: coinArr })
